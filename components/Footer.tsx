@@ -14,7 +14,7 @@ const Footer = () => {
             </Link>
             <p className="text-gray-300 mb-4">
               Empowering the next generation of programmers with comprehensive coding education 
-              in Vikasnagar and Herbertpur, Dehradun. Learn. Build. Launch.
+              in Herbertpur, Dehradun. Learn. Build. Launch.
             </p>
           </div>
 
@@ -48,8 +48,8 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin size={16} className="text-green mt-1" />
                 <div>
-                  <p className="text-gray-300">Vikasnagar, Dehradun</p>
-                  <p className="text-gray-300">Herbertpur, Dehradun</p>
+                  <p className="text-gray-300">22 Near D.R School, Herbertpur</p>
+                  <p className="text-gray-300">Dehradun, Uttarakhand 248142</p>
                 </div>
               </li>
             </ul>

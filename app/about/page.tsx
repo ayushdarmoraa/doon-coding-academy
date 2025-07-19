@@ -3,15 +3,15 @@ import Link from 'next/link'
 import { Users, Award, BookOpen, Target, Heart, Lightbulb } from 'lucide-react'
 
 export const metadata = {
-  title: "About Us | Doon Coding Academy - Dehradun’s Best Coding Institute",
+  title: "About Us | Doon Coding Academy - Dehradun's Best Coding Institute",
   description:
-    "Learn about Doon Coding Academy’s mission, vision, and expert instructors. Based in Vikasnagar & Herbertpur, we offer quality coding education in Full Stack, C, Java, Python.",
+    "Learn about Doon Coding Academy's mission, vision, and expert instructors. Based in Herbertpur, Dehradun, we offer quality coding education in Full Stack, C, Java, Python.",
   keywords: [
     "about doon coding academy",
     "coding teachers in Dehradun",
     "best coding institute Dehradun",
     "about us coding school",
-    "programming mentors in Vikasnagar",
+    "programming mentors in Herbertpur",
     "Herbertpur coding tutors"
   ],
   openGraph: {

@@ -130,7 +130,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">Complete web development course covering frontend and backend technologies</p>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-green font-semibold">6 Months</span>
-                  <span className="text-navy font-bold">₹25,000</span>
+                  <span className="text-navy font-bold">₹10,000 total or ₹3,000/month</span>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -156,10 +156,10 @@ const Home = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
               <div className="p-6">
                 <h3 className="text-xl font-bold text-navy mb-2">Python Programming</h3>
-                <p className="text-gray-600 mb-4">Learn Python from basics to advanced concepts with practical projects</p>
+                <p className="text-gray-600 mb-4">Learn Python from basics to advanced concepts with practical projects and real-world applications</p>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-green font-semibold">3 Months</span>
-                  <span className="text-navy font-bold">₹15,000</span>
+                  <span className="text-navy font-bold">₹2,000/month</span>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -188,7 +188,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">Master Java programming with object-oriented concepts and frameworks</p>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-green font-semibold">4 Months</span>
-                  <span className="text-navy font-bold">₹18,000</span>
+                  <span className="text-navy font-bold">₹2,000/month</span>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -308,7 +308,7 @@ const Home = () => {
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold text-navy mb-3">Are classes online or offline?</h3>
-              <p className="text-gray-600">Both options are available. You can choose between in-person classes at our Vikasnagar and Herbertpur centers or join our online sessions.</p>
+              <p className="text-gray-600">Both options are available. You can choose between in-person classes at our Herbertpur center or join our online sessions.</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
