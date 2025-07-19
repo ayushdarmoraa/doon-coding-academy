@@ -1,31 +1,63 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
+import { Phone, Mail, Clock, MessageCircle, MapPin } from 'lucide-react'
 
-export const metadata = {
-  title: "Contact Us | Doon Coding Academy",
-  description:
-    "Get in touch with Doon Coding Academy for admissions, inquiries, and course details. Visit us in Vikasnagar or Herbertpur, or message us online.",
-  keywords: [
-    "contact coding academy",
-    "doon coding contact",
-    "coding classes admission",
-    "inquire about programming course",
-    "Dehradun coding institute phone"
-  ],
-  openGraph: {
-    title: "Contact Doon Coding Academy",
-    description:
-      "Reach out to us to join our coding classes in Full Stack, Java, Python, and C. Offline and online support available.",
-    url: "https://dooncodingacademy.in/contact",
-    siteName: "Doon Coding Academy",
-    locale: "en_IN",
-    type: "website",
-  },
-};
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    course: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState('')
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
 
-const Contact = () => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitMessage('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitMessage('✅ Thank you! Your message has been sent.')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          course: '',
+          message: ''
+        })
+        // Optional: Redirect to thank you page after 2 seconds
+        setTimeout(() => {
+          window.location.href = '/thank-you'
+        }, 2000)
+      } else {
+        setSubmitMessage('❌ Sorry, there was an error sending your message. Please try again.')
+      }
+    } catch (error) {
+      setSubmitMessage('❌ Sorry, there was an error sending your message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
   return (
     <div>
       {/* Hero Section */}
@@ -104,7 +136,12 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-navy mb-6">Send us a Message</h3>
-              <form action="https://formspree.io/f/mqalargn" method="POST" className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {submitMessage && (
+                  <div className={`p-4 rounded-lg ${submitMessage.includes('✅') ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                    {submitMessage}
+                  </div>
+                )}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Full Name *
@@ -113,6 +150,8 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green"
                     placeholder="Your full name"
@@ -127,6 +166,8 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green"
                     placeholder="your@email.com"
@@ -141,6 +182,8 @@ const Contact = () => {
                     type="tel"
                     id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green"
                     placeholder="+91 7037905464"
                   />
@@ -153,13 +196,15 @@ const Contact = () => {
                   <select
                     id="course"
                     name="course"
+                    value={formData.course}
+                    onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green"
                   >
                     <option value="">Select a course</option>
-                    <option value="fullstack">Full Stack Web Development</option>
-                    <option value="python">Python Programming</option>
-                    <option value="java">Java Programming</option>
-                    <option value="c">C Programming</option>
+                    <option value="Full Stack Web Development">Full Stack Web Development</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Java Programming">Java Programming</option>
+                    <option value="C Programming">C Programming</option>
                   </select>
                 </div>
 
@@ -170,6 +215,8 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={4}
                     required
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-green"
@@ -177,8 +224,12 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn-primary w-full">
-                  Send Message
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
@@ -263,5 +314,3 @@ const Contact = () => {
     </div>
   )
 }
-
-export default Contact
