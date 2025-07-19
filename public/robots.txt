@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dooncodingacademy.in
+
+# Sitemaps
+Sitemap: https://dooncodingacademy.in/sitemap.xml
