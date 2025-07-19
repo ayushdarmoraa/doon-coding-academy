@@ -58,7 +58,9 @@ const Courses = () => {
                   <div className="flex items-center"><Award className="w-5 h-5 text-green mr-2" /><span>Certificate</span></div>
                   <div className="flex items-center"><Code className="w-5 h-5 text-green mr-2" /><span>Live Projects</span></div>
                 </div>
-                <div className="text-3xl font-bold text-navy mb-4">₹10,000 <span className="text-lg font-normal text-gray-600">(4-month total) or ₹3,000/month</span></div>
+                <div className="text-3xl font-bold text-navy mb-4">
+                  ₹10,000 <span className="text-lg font-normal text-gray-600">(4-month total) or ₹3,000/month</span>
+                </div>
                 <Link href="/enroll" className="btn-primary">Enroll Now</Link>
               </div>
               <div className="md:w-1/2 p-8 bg-gray-50">
@@ -88,6 +90,7 @@ const Courses = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
             {/* Python */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="p-6">
@@ -165,6 +168,7 @@ const Courses = () => {
                 <Link href="/enroll" className="btn-primary w-full text-center">Enroll Now</Link>
               </div>
             </div>
+
           </div>
         </div>
       </section>
