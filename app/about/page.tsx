@@ -2,6 +2,30 @@ import React from 'react'
 import Link from 'next/link'
 import { Users, Award, BookOpen, Target, Heart, Lightbulb } from 'lucide-react'
 
+export const metadata = {
+  title: "About Us | Doon Coding Academy - Dehradun’s Best Coding Institute",
+  description:
+    "Learn about Doon Coding Academy’s mission, vision, and expert instructors. Based in Vikasnagar & Herbertpur, we offer quality coding education in Full Stack, C, Java, Python.",
+  keywords: [
+    "about doon coding academy",
+    "coding teachers in Dehradun",
+    "best coding institute Dehradun",
+    "about us coding school",
+    "programming mentors in Vikasnagar",
+    "Herbertpur coding tutors"
+  ],
+  openGraph: {
+    title: "About Doon Coding Academy",
+    description:
+      "Know more about our expert team and teaching philosophy. We specialize in hands-on coding education in Full Stack, Java, Python, and C.",
+    url: "https://dooncodingacademy.in/about",
+    siteName: "Doon Coding Academy",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
+
 const About = () => {
   return (
     <div>

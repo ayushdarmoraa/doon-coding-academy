@@ -2,6 +2,25 @@ import React from 'react'
 import Link from 'next/link'
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react'
 
+export const metadata = {
+  title: 'Coding Blog | Tips, Projects & Guides – Doon Coding Academy',
+  description:
+    'Explore coding tips, full stack development tutorials, student success stories, and real-world programming projects from Doon Coding Academy.',
+  keywords: [
+    'coding blog',
+    'web development tutorials',
+    'Java projects',
+    'Python tips',
+    'student coding projects',
+    'programming guides',
+    'full stack blog',
+    'Dehradun coding stories',
+    'learning to code India',
+    'developer blog'
+  ],
+};
+
+
 const Blog = () => {
   const blogPosts = [
     {

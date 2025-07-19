@@ -1,6 +1,41 @@
+import type { Metadata } from 'next' // ✅ Required for type safety
 import React from 'react'
 import Link from 'next/link'
 import { Code, Users, Trophy, Clock, CheckCircle, Star, ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Doon Coding Academy | Best Full Stack, Java, Python Classes in Dehradun',
+  description:
+    'Join Doon Coding Academy for expert-led Full Stack Development, C, Java, Python coaching in Dehradun, Vikasnagar, Herbertpur. Online + Offline batches available.',
+  keywords: [
+    'Full Stack Development Dehradun',
+    'C programming coaching',
+    'Java classes in Dehradun',
+    'Python coaching near me',
+    'coding institute in Vikasnagar',
+    'coding academy Herbertpur',
+    'best coding classes Dehradun',
+    'coding for beginners',
+    'programming classes for students',
+    'learn web development India'
+  ],
+  openGraph: {
+    title: 'Doon Coding Academy | Learn. Build. Launch.',
+    description: 'Master Full Stack, C, Java & Python with top coding instructors in Vikasnagar, Herbertpur & Dehradun. Offline and Online available.',
+    url: 'https://dooncodingacademy.in',
+    siteName: 'Doon Coding Academy',
+    type: 'website',
+    locale: 'en_IN',
+    images: [
+      {
+        url: '/logo.png', // ✅ Replace if stored elsewhere
+        width: 1200,
+        height: 630
+      }
+    ]
+  }
+};
+
 
 const Home = () => {
   return (

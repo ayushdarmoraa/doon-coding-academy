@@ -2,6 +2,29 @@ import React from 'react'
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 
+export const metadata = {
+  title: "Contact Us | Doon Coding Academy",
+  description:
+    "Get in touch with Doon Coding Academy for admissions, inquiries, and course details. Visit us in Vikasnagar or Herbertpur, or message us online.",
+  keywords: [
+    "contact coding academy",
+    "doon coding contact",
+    "coding classes admission",
+    "inquire about programming course",
+    "Dehradun coding institute phone"
+  ],
+  openGraph: {
+    title: "Contact Doon Coding Academy",
+    description:
+      "Reach out to us to join our coding classes in Full Stack, Java, Python, and C. Offline and online support available.",
+    url: "https://dooncodingacademy.in/contact",
+    siteName: "Doon Coding Academy",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
+
 const Contact = () => {
   return (
     <div>

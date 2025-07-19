@@ -2,6 +2,31 @@ import React from 'react'
 import Link from 'next/link'
 import { CheckCircle, Clock, Users, Award, Code, Database, Globe, Smartphone } from 'lucide-react'
 
+export const metadata = {
+  title: "Courses | Full Stack, Java, Python, C | Doon Coding Academy",
+  description:
+    "Explore our coding courses: Full Stack Development, Python, Java, C. Beginner to advanced programs in Vikasnagar & Herbertpur, Dehradun.",
+  keywords: [
+    "coding courses in Dehradun",
+    "learn full stack development",
+    "python course Dehradun",
+    "java course near me",
+    "C programming classes",
+    "Herbertpur coding institute",
+    "online coding programs India"
+  ],
+  openGraph: {
+    title: "Our Courses | Doon Coding Academy",
+    description:
+      "Find the right coding course for you. Choose from Java, C, Python, or Full Stack Development in our offline/online formats.",
+    url: "https://dooncodingacademy.in/courses",
+    siteName: "Doon Coding Academy",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
+
 const Courses = () => {
   return (
     <div>

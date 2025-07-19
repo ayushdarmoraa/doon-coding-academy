@@ -7,17 +7,38 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Doon Coding Academy - Learn. Build. Launch.',
-  description: 'Professional coding education in Vikasnagar and Herbertpur, Dehradun. Learn Full Stack Development, C, Java, Python with expert instructors.',
-  keywords: 'coding academy, programming courses, full stack development, C programming, Java, Python, Dehradun, Vikasnagar, Herbertpur',
-  authors: [{ name: 'Doon Coding Academy' }],
+  title: "Doon Coding Academy | Learn Full Stack, C, Java, Python in Dehradun",
+  description:
+    "Join Doon Coding Academy in Vikasnagar & Herbertpur to master Full Stack Web Development, C, Java, Python. Learn from expert instructors. Online & Offline Classes.",
+  keywords: [
+    "coding classes in Dehradun",
+    "Full Stack Development course",
+    "C programming coaching",
+    "Java coaching",
+    "Python coaching",
+    "coding academy in Vikasnagar",
+    "Herbertpur programming classes",
+    "best coding institute in Dehradun"
+  ],
+  authors: [{ name: "Doon Coding Academy" }],
   openGraph: {
-    title: 'Doon Coding Academy - Learn. Build. Launch.',
-    description: 'Professional coding education in Vikasnagar and Herbertpur, Dehradun.',
-    type: 'website',
-    locale: 'en_US',
+    title: "Doon Coding Academy | Learn. Build. Launch.",
+    description:
+      "Professional coaching for Full Stack Development, C, Java & Python in Vikasnagar, Herbertpur & Dehradun. Offline & Online batches available.",
+    url: "https://dooncodingacademy.in",
+    siteName: "Doon Coding Academy",
+    images: [
+      {
+        url: "/logo.png", // update this if your logo is somewhere else
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
-}
+};
+
 
 export default function RootLayout({
   children,
