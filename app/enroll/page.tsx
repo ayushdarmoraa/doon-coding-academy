@@ -158,7 +158,7 @@ const Enroll = () => {
                     ))}
                   </ul>
 
-                  <div className="space-y-3">
+                  <div className="flex flex-col sm:flex-row gap-3 mt-6">
                     <a
                       href={`https://wa.me/917037905464?text=Hi, I want to enroll in ${course.name} course`}
                       target="_blank"
