@@ -8,7 +8,7 @@ const Enroll = () => {
       id: 'fullstack',
       name: 'Full Stack Web Development',
       duration: '6 Months',
-      price: '₹25,000',
+      price: '₹10,000 (4-month total) or ₹3,000/month',
       features: [
         'HTML, CSS, JavaScript',
         'React & Node.js',
@@ -21,7 +21,7 @@ const Enroll = () => {
       id: 'python',
       name: 'Python Programming',
       duration: '3 Months',
-      price: '₹15,000',
+      price: '₹2,000/month',
       features: [
         'Python Fundamentals',
         'Data Structures & Algorithms',
@@ -34,7 +34,7 @@ const Enroll = () => {
       id: 'java',
       name: 'Java Programming',
       duration: '4 Months',
-      price: '₹18,000',
+      price: '₹2,000/month',
       features: [
         'Core Java Concepts',
         'Object-Oriented Programming',
@@ -47,7 +47,7 @@ const Enroll = () => {
       id: 'c',
       name: 'C Programming',
       duration: '2 Months',
-      price: '₹12,000',
+      price: '₹2,000/month',
       features: [
         'C Language Basics',
         'Pointers & Memory Management',
@@ -95,7 +95,7 @@ const Enroll = () => {
                 Get instant response and enroll directly through WhatsApp. Our team will guide you through the process.
               </p>
               <a
-                href="https://wa.me/919876543210?text=Hi, I want to enroll in a course at Doon Coding Academy"
+                href="https://wa.me/917037905464?text=Hi, I want to enroll in a course at Doon Coding Academy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full"
@@ -114,10 +114,10 @@ const Enroll = () => {
                 Speak directly with our counselors to choose the right course and get personalized guidance.
               </p>
               <a
-                href="tel:+919876543210"
+                href="tel:+917037905464"
                 className="btn-secondary w-full"
               >
-                Call Now: +91 9876543210
+                Call Now: +91 7037905464
               </a>
             </div>
           </div>
@@ -160,7 +160,7 @@ const Enroll = () => {
 
                   <div className="space-y-3">
                     <a
-                      href={`https://wa.me/919876543210?text=Hi, I want to enroll in ${course.name} course`}
+                      href={`https://wa.me/917037905464?text=Hi, I want to enroll in ${course.name} course`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-primary w-full text-center"
@@ -238,7 +238,7 @@ const Enroll = () => {
               <Phone className="w-8 h-8 text-green mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-navy mb-2">Call Us</h3>
               <p className="text-gray-600 mb-4">Speak with our counselors</p>
-              <a href="tel:+919876543210" className="text-green font-medium">+91 9876543210</a>
+              <a href="tel:+917037905464" className="text-green font-medium">+91 7037905464</a>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -246,7 +246,7 @@ const Enroll = () => {
               <h3 className="text-lg font-semibold text-navy mb-2">WhatsApp</h3>
               <p className="text-gray-600 mb-4">Quick response guaranteed</p>
               <a 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/917037905464" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-green font-medium"
@@ -259,8 +259,8 @@ const Enroll = () => {
               <Mail className="w-8 h-8 text-green mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-navy mb-2">Email</h3>
               <p className="text-gray-600 mb-4">Send us your queries</p>
-              <a href="mailto:info@dooncodingacademy.com" className="text-green font-medium">
-                info@dooncodingacademy.com
+              <a href="mailto:dooncodingacademy@gmail.com" className="text-green font-medium">
+                dooncodingacademy@gmail.com
               </a>
             </div>
           </div>
@@ -278,7 +278,7 @@ const Enroll = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/919876543210?text=Hi, I want to enroll in a course at Doon Coding Academy"
+              href="https://wa.me/917037905464?text=Hi, I want to enroll in a course at Doon Coding Academy"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-lg px-8 py-4"
@@ -286,7 +286,7 @@ const Enroll = () => {
               Enroll via WhatsApp
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+917037905464"
               className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy"
             >
               Call Now

@@ -55,8 +55,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-navy mb-2">Phone Numbers</h3>
-                    <p className="text-gray-600">+91 9876543210</p>
-                    <p className="text-gray-600">+91 9876543211</p>
+                    <p className="text-gray-600">+91 7037905464</p>
                   </div>
                 </div>
 
@@ -66,8 +65,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-navy mb-2">Email</h3>
-                    <p className="text-gray-600">info@dooncodingacademy.com</p>
-                    <p className="text-gray-600">admissions@dooncodingacademy.com</p>
+                    <p className="text-gray-600">dooncodingacademy@gmail.com</p>
                   </div>
                 </div>
 
@@ -91,7 +89,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-navy mb-2">WhatsApp</h3>
                     <p className="text-gray-600">Quick response on WhatsApp</p>
                     <a 
-                      href="https://wa.me/919876543210" 
+                      href="https://wa.me/917037905464" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="btn-primary inline-block mt-2"
@@ -260,7 +258,7 @@ const Contact = () => {
               Enroll Now
             </Link>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917037905464"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy"

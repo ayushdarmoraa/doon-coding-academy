@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -16,20 +16,6 @@ const Footer = () => {
               Empowering the next generation of programmers with comprehensive coding education 
               in Vikasnagar and Herbertpur, Dehradun. Learn. Build. Launch.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-green transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-green transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-green transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-green transition-colors">
-                <Linkedin size={20} />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -52,13 +38,12 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <Phone size={16} className="text-green mt-1" />
                 <div>
-                  <p className="text-gray-300">+91 9876543210</p>
-                  <p className="text-gray-300">+91 9876543211</p>
+                  <p className="text-gray-300">+91 7037905464</p>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={16} className="text-green mt-1" />
-                <p className="text-gray-300">info@dooncodingacademy.com</p>
+                <p className="text-gray-300">dooncodingacademy@gmail.com</p>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={16} className="text-green mt-1" />

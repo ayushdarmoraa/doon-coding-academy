@@ -54,7 +54,8 @@ const Courses = () => {
                 </div>
                 <p className="text-gray-600 mb-6">
                   Complete web development course covering both frontend and backend technologies. 
-                  Build real-world applications from scratch.
+                  Build real-world applications from scratch with hands-on assignments, GitHub portfolio building, 
+                  and comprehensive interview preparation. Available in both online and offline formats.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center">
@@ -74,7 +75,7 @@ const Courses = () => {
                     <span>Live Projects</span>
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-navy mb-4">₹25,000</div>
+                <div className="text-3xl font-bold text-navy mb-4">₹10,000 <span className="text-lg font-normal text-gray-600">(4-month total) or ₹3,000/month</span></div>
                 <Link href="/enroll" className="btn-primary">
                   Enroll Now
                 </Link>
@@ -84,31 +85,35 @@ const Courses = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>HTML5, CSS3, JavaScript ES6+</span>
+                    <span>HTML5, CSS3, JavaScript ES6+ with real-world projects</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>React.js with Hooks and Context API</span>
+                    <span>React.js with Hooks and Context API - hands-on assignments</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>Node.js and Express.js</span>
+                    <span>Node.js and Express.js with portfolio projects</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>MongoDB and Database Design</span>
+                    <span>MongoDB and Database Design with GitHub integration</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>REST API Development</span>
+                    <span>REST API Development and testing</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>Authentication and Security</span>
+                    <span>Authentication, Security, and best practices</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
-                    <span>Deployment and DevOps Basics</span>
+                    <span>Deployment, DevOps basics, and interview preparation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" />
+                    <span>Online + Offline batch options available</span>
                   </li>
                 </ul>
               </div>
@@ -138,7 +143,8 @@ const Courses = () => {
                   <h3 className="text-2xl font-bold text-navy">Python</h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Learn Python from basics to advanced concepts with practical projects and real-world applications.
+                  Learn Python from basics to advanced concepts with practical projects, hands-on assignments, 
+                  GitHub portfolio building, and interview preparation. Real-world applications and online + offline batch options.
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between">
@@ -147,25 +153,29 @@ const Courses = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Price:</span>
-                    <span className="font-bold text-navy">₹15,000</span>
+                    <span className="font-bold text-navy">₹2,000/month</span>
                   </div>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Python Fundamentals
+                    Python Fundamentals with real-world projects
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Data Structures & Algorithms
+                    Data Structures & Algorithms - hands-on practice
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Web Development with Flask
+                    Web Development with Flask and portfolio building
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Database Integration
+                    Database Integration and GitHub projects
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green mr-2" />
+                    Interview preparation and online + offline batches
                   </li>
                 </ul>
                 <Link href="/enroll" className="btn-primary w-full text-center">
@@ -182,7 +192,8 @@ const Courses = () => {
                   <h3 className="text-2xl font-bold text-navy">Java</h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Master Java programming with object-oriented concepts and enterprise-level frameworks.
+                  Master Java programming with object-oriented concepts, enterprise-level frameworks, hands-on assignments, 
+                  GitHub portfolio building, and comprehensive interview preparation. Online + offline batch options available.
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between">
@@ -191,25 +202,29 @@ const Courses = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Price:</span>
-                    <span className="font-bold text-navy">₹18,000</span>
+                    <span className="font-bold text-navy">₹2,000/month</span>
                   </div>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Core Java Concepts
+                    Core Java Concepts with real-world projects
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Object-Oriented Programming
+                    Object-Oriented Programming - hands-on assignments
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Spring Framework
+                    Spring Framework and portfolio building
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Database Integration
+                    Database Integration and GitHub projects
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green mr-2" />
+                    Interview preparation and online + offline batches
                   </li>
                 </ul>
                 <Link href="/enroll" className="btn-primary w-full text-center">
@@ -226,7 +241,8 @@ const Courses = () => {
                   <h3 className="text-2xl font-bold text-navy">C Programming</h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Build a strong foundation in programming with C language fundamentals and system programming.
+                  Build a strong foundation in programming with C language fundamentals, system programming, hands-on assignments, 
+                  GitHub portfolio building, and interview preparation. Online + offline batch options available.
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between">
@@ -235,25 +251,29 @@ const Courses = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Price:</span>
-                    <span className="font-bold text-navy">₹12,000</span>
+                    <span className="font-bold text-navy">₹2,000/month</span>
                   </div>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    C Language Basics
+                    C Language Basics with real-world projects
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Pointers and Memory Management
+                    Pointers and Memory Management - hands-on practice
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    Data Structures in C
+                    Data Structures in C and portfolio building
                   </li>
                   <li className="flex items-center text-sm">
                     <CheckCircle className="w-4 h-4 text-green mr-2" />
-                    System Programming
+                    System Programming and GitHub projects
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="w-4 h-4 text-green mr-2" />
+                    Interview preparation and online + offline batches
                   </li>
                 </ul>
                 <Link href="/enroll" className="btn-primary w-full text-center">

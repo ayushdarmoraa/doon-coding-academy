@@ -48,8 +48,7 @@ const Home = () => {
               Learn. Build. Launch.
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto fade-in">
-              Master coding skills with expert instructors in Vikasnagar and Herbertpur, Dehradun. 
-              From fundamentals to full-stack development.
+              A place where future developers learn by building. Master coding through real-world projects and application-first teaching.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in">
               <Link href="/enroll" className="btn-primary text-lg px-8 py-4">
@@ -279,6 +278,52 @@ const Home = () => {
                   <p className="text-sm text-gray-500">Java Developer at Software Solutions</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Get answers to common questions about our courses and academy.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">Do I need prior experience?</h3>
+              <p className="text-gray-600">No, our courses are beginner-friendly. We start from the basics and gradually build up to advanced concepts.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">Will I get a certificate?</h3>
+              <p className="text-gray-600">Yes, on completion of any course, you will receive an industry-recognized certificate from Doon Coding Academy.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">Are classes online or offline?</h3>
+              <p className="text-gray-600">Both options are available. You can choose between in-person classes at our Vikasnagar and Herbertpur centers or join our online sessions.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">What is the class schedule?</h3>
+              <p className="text-gray-600">We offer flexible schedules including weekend and evening batches to accommodate working professionals and students.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">Do you provide job assistance?</h3>
+              <p className="text-gray-600">Yes, we provide interview preparation, resume building, and job placement assistance to help you start your career.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">Can I pay in installments?</h3>
+              <p className="text-gray-600">Yes, we offer flexible payment options including monthly installments for all our courses.</p>
             </div>
           </div>
         </div>
