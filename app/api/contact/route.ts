@@ -9,17 +9,19 @@ export async function POST(req: Request) {
   }
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: process.env.SMTP_HOST,
+    port: parseInt(process.env.SMTP_PORT || '587'),
+    secure: process.env.SMTP_PORT === '465',
     auth: {
-      user: 'dooncodingacademy@gmail.com',
-      pass: process.env.GMAIL_APP_PASSWORD,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: `"Doon Coding Academy" <dooncodingacademy@gmail.com>`,
-      to: 'dooncodingacademy@gmail.com',
+      from: `"Doon Coding Academy" <${process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER,
       subject: `New Inquiry from ${name}`,
       text: `
         Name: ${name}
@@ -37,4 +39,5 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
 }
+
 
