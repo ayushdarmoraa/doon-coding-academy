@@ -66,14 +66,14 @@ const Courses = () => {
               <div className="md:w-1/2 p-8 bg-gray-50">
                 <h3 className="text-xl font-bold text-navy mb-4">What You'll Learn:</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">HTML5, CSS3, JavaScript ES6+ with real-world projects</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">React.js with Hooks and Context API - hands-on assignments</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">Node.js and Express.js with portfolio projects</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">MongoDB and Database Design with GitHub integration</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">REST API Development and testing</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">Authentication, Security, and best practices</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">Deployment, DevOps basics, and interview preparation</span></li>
-                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium">Online + Offline batch options available</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">HTML5, CSS3, JavaScript ES6+ with real-world projects</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">React.js with Hooks and Context API - hands-on assignments</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">Node.js and Express.js with portfolio projects</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">MongoDB and Database Design with GitHub integration</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">REST API Development and testing</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">Authentication, Security, and best practices</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">Deployment, DevOps basics, and interview preparation</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green mr-2 mt-0.5" /><span className="text-black font-medium text-base">Online + Offline batch options available</span></li>
                 </ul>
               </div>
             </div>
@@ -107,11 +107,11 @@ const Courses = () => {
                   <div className="flex justify-between"><span className="font-bold text-navy">₹2,000/month</span></div>
                 </div>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Python Fundamentals with real-world projects</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Data Structures & Algorithms - hands-on practice</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Web Development with Flask and portfolio building</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Database Integration and GitHub projects</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Interview preparation and online + offline batches</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Python Fundamentals with real-world projects</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Data Structures & Algorithms - hands-on practice</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Web Development with Flask and portfolio building</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Database Integration and GitHub projects</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Interview preparation and online + offline batches</span></li>
                 </ul>
                 <Link href="/enroll" className="btn-primary w-full text-center">Enroll Now</Link>
               </div>
@@ -133,11 +133,11 @@ const Courses = () => {
                   <div className="flex justify-between"><span className="font-bold text-navy">₹2,000/month</span></div>
                 </div>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Core Java Concepts with real-world projects</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Object-Oriented Programming - hands-on assignments</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Spring Framework and portfolio building</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Database Integration and GitHub projects</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Interview preparation and online + offline batches</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Core Java Concepts with real-world projects</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Object-Oriented Programming - hands-on assignments</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Spring Framework and portfolio building</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Database Integration and GitHub projects</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Interview preparation and online + offline batches</span></li>
                 </ul>
                 <Link href="/enroll" className="btn-primary w-full text-center">Enroll Now</Link>
               </div>
@@ -159,11 +159,11 @@ const Courses = () => {
                   <div className="flex justify-between"><span className="font-bold text-navy">₹2,000/month</span></div>
                 </div>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">C Language Basics with real-world projects</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Pointers and Memory Management - hands-on practice</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Data Structures in C and portfolio building</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">System Programming and GitHub projects</span></li>
-                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium">Interview preparation and online + offline batches</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">C Language Basics with real-world projects</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Pointers and Memory Management - hands-on practice</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Data Structures in C and portfolio building</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">System Programming and GitHub projects</span></li>
+                  <li className="flex items-center text-sm"><CheckCircle className="w-4 h-4 text-green mr-2" /><span className="text-black font-medium text-base">Interview preparation and online + offline batches</span></li>
                 </ul>
                 <Link href="/enroll" className="btn-primary w-full text-center">Enroll Now</Link>
               </div>
