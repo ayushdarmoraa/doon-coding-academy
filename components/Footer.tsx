@@ -59,9 +59,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p className="text-gray-300">
-            © 2024 Doon Coding Academy. All rights reserved. | 
+            © 2025 Doon Coding Academy. All rights reserved. | 
             <Link href="/privacy" className="text-green hover:underline ml-1">Privacy Policy</Link> | 
             <Link href="/terms" className="text-green hover:underline ml-1">Terms of Service</Link>
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            Last Updated: January 2025
           </p>
         </div>
       </div>

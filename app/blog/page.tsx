@@ -25,67 +25,73 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Getting Started with Full Stack Development in 2024",
-      excerpt: "Learn the essential technologies and roadmap to become a full stack developer in today's competitive market.",
+      title: "How to Start with Python in 2025: Complete Beginner's Guide",
+      excerpt: "Learn how to start programming with Python in 2025. Complete guide covering installation, basics, career paths, and learning resources for beginners.",
       author: "Doon Coding Academy",
-      date: "March 15, 2024",
-      category: "Web Development",
-      readTime: "5 min read",
-      image: "/api/placeholder/400/250"
+      date: "January 15, 2025",
+      category: "Programming",
+      readTime: "8 min read",
+      slug: "how-to-start-python-2025",
+      image: "/coding-classroom.jpg"
     },
     {
       id: 2,
+      title: "Top 5 Career Paths in Data Science 2025: Your Complete Guide",
+      excerpt: "Explore the top 5 data science career paths in 2025. Learn about salaries, required skills, and growth opportunities in AI, ML, and analytics.",
+      author: "Doon Coding Academy",
+      date: "January 20, 2025",
+      category: "Data Science",
+      readTime: "12 min read",
+      slug: "data-science-career-paths-2025",
+      image: "/instructor-teaching.jpg"
+    },
+    {
+      id: 3,
+      title: "Why Learn Full-Stack Development Today? Complete 2025 Guide",
+      excerpt: "Discover why full-stack development is the most versatile tech career in 2025. Learn about skills, salaries, and opportunities in web development.",
+      author: "Doon Coding Academy",
+      date: "January 25, 2025",
+      category: "Web Development",
+      readTime: "10 min read",
+      slug: "why-learn-full-stack-development-2025",
+      image: "/students-learning.jpg"
+    },
+    {
+      id: 4,
       title: "Python vs Java: Which Programming Language to Choose?",
       excerpt: "A comprehensive comparison of Python and Java to help you decide which language fits your career goals.",
       author: "Doon Coding Academy",
       date: "March 10, 2024",
       category: "Programming",
       readTime: "7 min read",
+      slug: "python-vs-java-comparison",
       image: "/api/placeholder/400/250"
     },
     {
-      id: 3,
+      id: 5,
       title: "Top 10 Coding Interview Questions for Beginners",
       excerpt: "Prepare for your first coding interview with these commonly asked questions and detailed solutions.",
       author: "Doon Coding Academy",
       date: "March 5, 2024",
       category: "Career",
       readTime: "10 min read",
+      slug: "coding-interview-questions-beginners",
       image: "/api/placeholder/400/250"
     },
     {
-      id: 4,
+      id: 6,
       title: "Building Your First React Application: A Step-by-Step Guide",
       excerpt: "Learn how to create a modern React application from scratch with practical examples and best practices.",
       author: "Doon Coding Academy",
       date: "February 28, 2024",
       category: "React",
       readTime: "12 min read",
-      image: "/api/placeholder/400/250"
-    },
-    {
-      id: 5,
-      title: "The Future of Programming: Trends to Watch in 2024",
-      excerpt: "Explore the latest programming trends, emerging technologies, and skills that will shape the future.",
-      author: "Doon Coding Academy",
-      date: "February 20, 2024",
-      category: "Technology",
-      readTime: "8 min read",
-      image: "/api/placeholder/400/250"
-    },
-    {
-      id: 6,
-      title: "Database Design Fundamentals Every Developer Should Know",
-      excerpt: "Master the basics of database design, normalization, and best practices for efficient data management.",
-      author: "Doon Coding Academy",
-      date: "February 15, 2024",
-      category: "Database",
-      readTime: "15 min read",
+      slug: "first-react-application-guide",
       image: "/api/placeholder/400/250"
     }
   ]
 
-  const categories = ["All", "Web Development", "Programming", "Career", "React", "Technology", "Database"]
+  const categories = ["All", "Programming", "Data Science", "Web Development", "Career", "React", "Technology"]
 
   return (
     <div>
@@ -130,23 +136,23 @@ const Blog = () => {
               <div className="md:w-1/2 p-8">
                 <div className="flex items-center mb-4">
                   <span className="bg-green text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
-                  <span className="ml-3 text-green font-medium">Web Development</span>
+                  <span className="ml-3 text-green font-medium">Programming</span>
                 </div>
                 <h2 className="text-3xl font-bold text-navy mb-4">
-                  Getting Started with Full Stack Development in 2024
+                  How to Start with Python in 2025: Complete Beginner's Guide
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Learn the essential technologies and roadmap to become a full stack developer in today's competitive market. 
-                  This comprehensive guide covers everything from frontend frameworks to backend technologies.
+                  Learn how to start programming with Python in 2025. Complete guide covering installation, basics, career paths, and learning resources for beginners. 
+                  This comprehensive guide covers everything from setup to advanced concepts.
                 </p>
                 <div className="flex items-center text-sm text-gray-500 mb-6">
                   <User className="w-4 h-4 mr-1" />
                   <span className="mr-4">Doon Coding Academy</span>
                   <Calendar className="w-4 h-4 mr-1" />
-                  <span className="mr-4">March 15, 2024</span>
-                  <span>5 min read</span>
+                  <span className="mr-4">January 15, 2025</span>
+                  <span>8 min read</span>
                 </div>
-                <Link href="/blog/getting-started-full-stack-2024" className="btn-primary inline-flex items-center">
+                <Link href="/blog/how-to-start-python-2025" className="btn-primary inline-flex items-center">
                   Read More
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
@@ -191,7 +197,7 @@ const Blog = () => {
                     <span>{post.readTime}</span>
                   </div>
                   <Link 
-                    href={`/blog/${post.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                    href={`/blog/${post.slug}`}
                     className="text-green font-medium hover:text-green/80 inline-flex items-center"
                   >
                     Read More

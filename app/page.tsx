@@ -44,6 +44,10 @@ const Home = () => {
       <section className="gradient-bg text-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <div className="inline-flex items-center bg-green/20 text-green-100 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <Star className="w-4 h-4 mr-2" />
+              New: Data Science & AI Course Now Available
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 fade-in">
               Learn. Build. Launch.
             </h1>
@@ -54,8 +58,8 @@ const Home = () => {
               <Link href="/enroll" className="btn-primary text-lg px-8 py-4">
                 Start Your Journey
               </Link>
-              <Link href="/courses" className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy">
-                Explore Courses
+              <Link href="/courses/data-science" className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy">
+                Explore Data Science Course
               </Link>
             </div>
           </div>
@@ -123,6 +127,38 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Data Science Course - Featured */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden card-hover ring-2 ring-green relative">
+              <div className="absolute top-0 left-0 bg-green text-white px-3 py-1 text-xs font-medium rounded-br-lg">
+                ⭐ Most Popular
+              </div>
+              <div className="p-6 pt-8">
+                <h3 className="text-xl font-bold text-navy mb-2">Data Science & AI</h3>
+                <p className="text-gray-600 mb-4">Master Python, Machine Learning, and AI with hands-on projects and real-world applications</p>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-green font-semibold">6 Months</span>
+                  <span className="text-navy font-bold">₹15,000 total or ₹3,000/month</span>
+                </div>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 text-green mr-2" />
+                    Python & Machine Learning
+                  </li>
+                  <li className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 text-green mr-2" />
+                    Data Analysis & Visualization
+                  </li>
+                  <li className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 text-green mr-2" />
+                    AI & Deep Learning
+                  </li>
+                </ul>
+                <Link href="/courses/data-science" className="btn-primary w-full text-center">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+
             {/* Full Stack Development */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
               <div className="p-6">
@@ -146,7 +182,7 @@ const Home = () => {
                     Database Management
                   </li>
                 </ul>
-                <Link href="/courses" className="btn-primary w-full text-center">
+                <Link href="/courses/full-stack" className="btn-primary w-full text-center">
                   Learn More
                 </Link>
               </div>
@@ -159,7 +195,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">Learn Python from basics to advanced concepts with practical projects and real-world applications</p>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-green font-semibold">3 Months</span>
-                  <span className="text-navy font-bold">₹2,000/month</span>
+                  <span className="text-navy font-bold">₹6,000 total or ₹2,000/month</span>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -175,7 +211,7 @@ const Home = () => {
                     Web Development with Flask
                   </li>
                 </ul>
-                <Link href="/courses" className="btn-primary w-full text-center">
+                <Link href="/courses/python" className="btn-primary w-full text-center">
                   Learn More
                 </Link>
               </div>

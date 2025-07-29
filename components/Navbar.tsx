@@ -3,10 +3,11 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCoursesOpen, setIsCoursesOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -14,10 +15,17 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Courses', href: '/courses' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
     { name: 'Blog', href: '/blog' },
+  ]
+
+  const courses = [
+    { name: 'Data Science', href: '/courses/data-science', featured: true },
+    { name: 'Full Stack Development', href: '/courses/full-stack' },
+    { name: 'Python Programming', href: '/courses/python' },
+    { name: 'Java Programming', href: '/courses/java' },
+    { name: 'All Courses', href: '/courses' }
   ]
 
   return (
@@ -41,6 +49,46 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Courses Dropdown */}
+            <div className="relative">
+              <button
+                onMouseEnter={() => setIsCoursesOpen(true)}
+                onMouseLeave={() => setIsCoursesOpen(false)}
+                className="flex items-center text-gray-700 hover:text-green font-medium transition-colors duration-200"
+              >
+                Courses
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              
+              {isCoursesOpen && (
+                <div
+                  onMouseEnter={() => setIsCoursesOpen(true)}
+                  onMouseLeave={() => setIsCoursesOpen(false)}
+                  className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-lg border py-2 z-50"
+                >
+                  {courses.map((course) => (
+                    <Link
+                      key={course.name}
+                      href={course.href}
+                      className={`block px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                        course.featured 
+                          ? 'text-green font-semibold border-l-4 border-green bg-green/5' 
+                          : 'text-gray-700'
+                      }`}
+                    >
+                      {course.name}
+                      {course.featured && (
+                        <span className="ml-2 text-xs bg-green text-white px-2 py-1 rounded-full">
+                          Featured
+                        </span>
+                      )}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <Link
               href="/enroll"
               className="btn-primary"
@@ -74,6 +122,25 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Mobile Courses */}
+              <div className="px-3 py-2">
+                <div className="text-gray-700 font-medium mb-2">Courses</div>
+                {courses.map((course) => (
+                  <Link
+                    key={course.name}
+                    href={course.href}
+                    className={`block px-3 py-1 text-sm hover:text-green ${
+                      course.featured ? 'text-green font-semibold' : 'text-gray-600'
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {course.name}
+                    {course.featured && ' ⭐'}
+                  </Link>
+                ))}
+              </div>
+              
               <div className="px-3 py-2">
                 <Link
                   href="/enroll"
