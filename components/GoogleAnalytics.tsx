@@ -3,11 +3,8 @@
 import Script from 'next/script'
 
 const GoogleAnalytics = () => {
-  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
-
-  if (!GA_TRACKING_ID) {
-    return null
-  }
+  // For demo purposes, using a placeholder GA ID
+  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'
 
   return (
     <>
