@@ -1,28 +1,12 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react'
-
-export const metadata = {
-  title: 'Coding Blog | Tips, Projects & Guides – Doon Coding Academy',
-  description:
-    'Explore coding tips, full stack development tutorials, student success stories, and real-world programming projects from Doon Coding Academy.',
-  keywords: [
-    'coding blog',
-    'web development tutorials',
-    'Java projects',
-    'Python tips',
-    'student coding projects',
-    'programming guides',
-    'full stack blog',
-    'Dehradun coding stories',
-    'learning to code India',
-    'developer blog'
-  ],
-};
-
+import Image from 'next/image'
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All")
   const blogPosts = [
     {
       id: 1,
@@ -33,7 +17,7 @@ const Blog = () => {
       category: "Programming",
       readTime: "8 min read",
       slug: "how-to-start-python-2025",
-      image: "/coding-classroom.jpg"
+      image: "/blog-python.jpg"
     },
     {
       id: 2,
@@ -44,7 +28,7 @@ const Blog = () => {
       category: "Data Science",
       readTime: "12 min read",
       slug: "data-science-career-paths-2025",
-      image: "/instructor-teaching.jpg"
+      image: "/blog-data-science.jpg"
     },
     {
       id: 3,
@@ -55,7 +39,7 @@ const Blog = () => {
       category: "Web Development",
       readTime: "10 min read",
       slug: "why-learn-full-stack-development-2025",
-      image: "/students-learning.jpg"
+      image: "/blog-web-dev.jpg"
     },
     {
       id: 4,
@@ -66,7 +50,7 @@ const Blog = () => {
       category: "Programming",
       readTime: "7 min read",
       slug: "python-vs-java-comparison",
-      image: "/api/placeholder/400/250"
+      image: "/blog-programming.jpg"
     },
     {
       id: 5,
@@ -77,7 +61,7 @@ const Blog = () => {
       category: "Career",
       readTime: "10 min read",
       slug: "coding-interview-questions-beginners",
-      image: "/api/placeholder/400/250"
+      image: "/blog-programming.jpg"
     },
     {
       id: 6,
@@ -88,11 +72,16 @@ const Blog = () => {
       category: "React",
       readTime: "12 min read",
       slug: "first-react-application-guide",
-      image: "/api/placeholder/400/250"
+      image: "/blog-web-dev.jpg"
     }
   ]
 
   const categories = ["All", "Programming", "Data Science", "Web Development", "Career", "React", "Technology"]
+
+  // Filter posts based on selected category
+  const filteredPosts = selectedCategory === "All" 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === selectedCategory)
 
   return (
     <div>
@@ -124,7 +113,12 @@ const Blog = () => {
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-4 py-2 rounded-full border border-gray-300 hover:border-green hover:text-green transition-colors duration-200"
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2 rounded-full border transition-colors duration-200 ${
+                  selectedCategory === category
+                    ? 'border-green bg-green text-white'
+                    : 'border-gray-300 hover:border-green hover:text-green'
+                }`}
               >
                 {category}
               </button>
@@ -139,8 +133,13 @@ const Blog = () => {
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/2">
-                <div className="bg-gray-200 h-64 md:h-full flex items-center justify-center">
-                  <p className="text-gray-500">Featured Post Image</p>
+                <div className="relative h-64 md:h-full">
+                  <Image
+                    src="/blog-python.jpg"
+                    alt="How to Start with Python in 2025"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
               <div className="md:w-1/2 p-8">
@@ -185,10 +184,15 @@ const Blog = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.slice(1).map((post) => (
+            {filteredPosts.slice(1).map((post) => (
               <article key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <p className="text-gray-500">Blog Post Image</p>
+                <div className="relative h-48">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center mb-3">
