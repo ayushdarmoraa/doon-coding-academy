@@ -40,6 +40,57 @@ const Courses = () => {
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Featured Course - Data Science */}
+          <div className="bg-gradient-to-r from-blue-900 to-green-600 rounded-lg shadow-xl overflow-hidden mb-12 text-white">
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-1/2 p-8">
+                <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  🚀 MOST POPULAR COURSE
+                </div>
+                <div className="flex items-center mb-4">
+                  <Code className="w-8 h-8 text-white mr-3" />
+                  <h2 className="text-3xl font-bold text-white">Data Science & AI</h2>
+                </div>
+                <p className="text-gray-200 mb-6">
+                  Master Python, Machine Learning, and AI with hands-on projects and real-world applications. 
+                  Build your portfolio with industry-relevant projects and get job-ready with comprehensive 
+                  interview preparation. Available in both online and offline formats.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="flex items-center"><Clock className="w-5 h-5 text-white mr-2" /><span>6 Months</span></div>
+                  <div className="flex items-center"><Users className="w-5 h-5 text-white mr-2" /><span>Max 15 Students</span></div>
+                  <div className="flex items-center"><Award className="w-5 h-5 text-white mr-2" /><span>Certificate</span></div>
+                  <div className="flex items-center"><Code className="w-5 h-5 text-white mr-2" /><span>Live Projects</span></div>
+                </div>
+                <div className="text-3xl font-bold text-white mb-4">
+                  ₹15,000 <span className="text-lg font-normal text-gray-200">(6-month total) or ₹3,000/month</span>
+                </div>
+                <div className="flex gap-4">
+                  <Link href="/courses/data-science" className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Learn More
+                  </Link>
+                  <Link href="/enroll" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                    Enroll Now
+                  </Link>
+                </div>
+              </div>
+              <div className="md:w-1/2 p-8 bg-white/10 backdrop-blur-sm">
+                <h3 className="text-xl font-bold text-white mb-4">What You'll Learn:</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Python Programming & Data Analysis with NumPy, Pandas</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Machine Learning Algorithms & Model Building</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Deep Learning & Neural Networks with TensorFlow</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Data Visualization with Matplotlib & Seaborn</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">SQL & Database Management for Data Science</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Real-world Projects & Portfolio Development</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Job Placement Assistance & Interview Preparation</span></li>
+                  <li className="flex items-start"><CheckCircle className="w-5 h-5 text-green-400 mr-2 mt-0.5" /><span className="text-white font-medium text-base">Online + Offline batch options available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Full Stack Course */}
           <div className="bg-white rounded-lg shadow-xl overflow-hidden mb-12">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 p-8">
