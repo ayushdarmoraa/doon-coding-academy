@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Breadcrumbs from '../../components/Breadcrumbs'
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react'
 
 export const metadata = {
@@ -95,6 +96,15 @@ const Blog = () => {
 
   return (
     <div>
+      {/* Breadcrumbs */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <Breadcrumbs 
+          items={[
+            { label: 'Blog' }
+          ]} 
+        />
+      </div>
+
       {/* Hero Section */}
       <section className="gradient-bg text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

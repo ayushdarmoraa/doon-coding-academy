@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import React from 'react'
 import Link from 'next/link'
+import Breadcrumbs from '../../../components/Breadcrumbs'
+import StructuredData from '../../../components/StructuredData'
 import { 
   Brain, 
   BarChart3, 
@@ -11,7 +13,14 @@ import {
   Users, 
   Award,
   ArrowRight,
-  Star
+  Star,
+  Code,
+  Sigma,
+  GitFork,
+  Zap,
+  MessageSquare,
+  Cloud,
+  Rocket
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -34,51 +43,61 @@ const DataSciencePage = () => {
     {
       title: "Python Fundamentals & Data Science Basics",
       duration: "Week 1-2",
+      icon: <Code className="w-6 h-6 text-green" />,
       topics: ["Python syntax and data structures", "Jupyter Notebooks", "Introduction to Data Science", "Data types and sources"]
     },
     {
       title: "Data Collection & Preprocessing",
       duration: "Week 3-4", 
+      icon: <Database className="w-6 h-6 text-green" />,
       topics: ["Web scraping with Beautiful Soup", "Data cleaning techniques", "Handling missing values", "Data transformation"]
     },
     {
       title: "Exploratory Data Analysis & Visualization",
       duration: "Week 5-6",
+      icon: <BarChart3 className="w-6 h-6 text-green" />,
       topics: ["Descriptive statistics", "Matplotlib & Seaborn", "Data distributions", "Outlier detection"]
     },
     {
       title: "Statistical Foundations",
       duration: "Week 7-8",
+      icon: <Sigma className="w-6 h-6 text-green" />,
       topics: ["Probability theory", "Hypothesis testing", "Regression analysis", "ANOVA"]
     },
     {
       title: "Machine Learning - Supervised Learning",
       duration: "Week 9-12",
+      icon: <Brain className="w-6 h-6 text-green" />,
       topics: ["Linear & Logistic Regression", "Decision Trees & Random Forests", "Support Vector Machines", "Model evaluation"]
     },
     {
       title: "Machine Learning - Unsupervised Learning",
       duration: "Week 13-14",
+      icon: <GitFork className="w-6 h-6 text-green" />,
       topics: ["K-Means clustering", "Hierarchical clustering", "Principal Component Analysis", "Dimensionality reduction"]
     },
     {
       title: "Deep Learning Fundamentals",
       duration: "Week 15-18",
+      icon: <Zap className="w-6 h-6 text-green" />,
       topics: ["Neural Networks", "TensorFlow & Keras", "CNNs for image processing", "RNNs for sequences"]
     },
     {
       title: "Natural Language Processing",
       duration: "Week 19-20",
+      icon: <MessageSquare className="w-6 h-6 text-green" />,
       topics: ["Text preprocessing", "Sentiment analysis", "Topic modeling", "Word embeddings"]
     },
     {
       title: "Big Data & Cloud Technologies",
       duration: "Week 21-22",
+      icon: <Cloud className="w-6 h-6 text-green" />,
       topics: ["Introduction to Big Data", "Apache Spark overview", "Cloud platforms", "Data pipelines"]
     },
     {
       title: "Capstone Project & Deployment",
       duration: "Week 23-24",
+      icon: <Rocket className="w-6 h-6 text-green" />,
       topics: ["End-to-end project", "Model deployment", "MLOps basics", "Portfolio building"]
     }
   ]
@@ -106,6 +125,23 @@ const DataSciencePage = () => {
 
   return (
     <div className="min-h-screen">
+      <StructuredData type="course" data={{
+        name: "Data Science & AI Course",
+        description: "Master Python, Machine Learning, and AI with hands-on projects and real-world applications",
+        duration: "6 months",
+        price: "15000"
+      }} />
+      
+      {/* Breadcrumbs */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <Breadcrumbs 
+          items={[
+            { label: 'Courses', href: '/courses' },
+            { label: 'Data Science & AI' }
+          ]} 
+        />
+      </div>
+
       {/* Hero Section */}
       <section className="gradient-bg text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -175,12 +211,13 @@ const DataSciencePage = () => {
           <div className="grid gap-6">
             {modules.map((module, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-navy mb-2 md:mb-0">
+                <div className="flex items-center mb-4">
+                  {module.icon}
+                  <h3 className="text-xl font-semibold text-navy ml-3">
                     Module {index + 1}: {module.title}
                   </h3>
-                  <span className="text-green font-medium">{module.duration}</span>
                 </div>
+                <span className="text-green font-medium mb-4 block">{module.duration}</span>
                 <div className="grid md:grid-cols-2 gap-2">
                   {module.topics.map((topic, topicIndex) => (
                     <div key={topicIndex} className="flex items-center">

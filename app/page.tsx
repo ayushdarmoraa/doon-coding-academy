@@ -38,6 +38,8 @@ export const metadata: Metadata = {
 
 
 const Home = () => {
+  const lastUpdated = "January 29, 2025"
+  
   return (
     <div>
       {/* Hero Section */}
@@ -273,6 +275,11 @@ const Home = () => {
                 and the practical approach helped me land my dream job."
               </p>
               <div className="flex items-center">
+                <img 
+                  src="/student-priya.jpg" 
+                  alt="Priya Sharma" 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div className="ml-4">
                   <h4 className="font-semibold text-navy">Priya Sharma</h4>
                   <p className="text-sm text-gray-500">Full Stack Developer at Tech Corp</p>
@@ -291,6 +298,11 @@ const Home = () => {
                 and helped me transition into data science."
               </p>
               <div className="flex items-center">
+                <img 
+                  src="/student-rahul.jpg" 
+                  alt="Rahul Verma" 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div className="ml-4">
                   <h4 className="font-semibold text-navy">Rahul Verma</h4>
                   <p className="text-sm text-gray-500">Data Scientist at Analytics Plus</p>
@@ -309,6 +321,11 @@ const Home = () => {
                 thanks to the solid foundation I got here."
               </p>
               <div className="flex items-center">
+                <img 
+                  src="/student-amit.jpg" 
+                  alt="Amit Kumar" 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div className="ml-4">
                   <h4 className="font-semibold text-navy">Amit Kumar</h4>
                   <p className="text-sm text-gray-500">Java Developer at Software Solutions</p>
@@ -361,6 +378,26 @@ const Home = () => {
               <h3 className="text-lg font-semibold text-navy mb-3">Can I pay in installments?</h3>
               <p className="text-gray-600">Yes, we offer flexible payment options including monthly installments for all our courses.</p>
             </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">What is the batch size and frequency?</h3>
+              <p className="text-gray-600">We maintain small batch sizes of maximum 15 students for personalized attention. New batches start every month for all courses.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">What is your refund and rescheduling policy?</h3>
+              <p className="text-gray-600">We offer a 7-day money-back guarantee if you're not satisfied. Students can reschedule to the next batch with 48-hour notice at no extra cost.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">What is your job placement success rate?</h3>
+              <p className="text-gray-600">85% of our students get placed within 6 months of course completion. We provide dedicated placement support including interview preparation, resume building, and direct company referrals.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-semibold text-navy mb-3">What tools and devices are required for online classes?</h3>
+              <p className="text-gray-600">You need a laptop/desktop with minimum 4GB RAM, stable internet connection (minimum 10 Mbps), and we'll provide access to all required software and development tools.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -382,6 +419,15 @@ const Home = () => {
               Contact Us
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Last Updated */}
+      <section className="py-4 bg-gray-100 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-gray-600">
+            Last updated on {lastUpdated}
+          </p>
         </div>
       </section>
     </div>
